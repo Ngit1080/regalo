@@ -1,0 +1,22 @@
+@CHARSET "UTF-8";
+
+
+	footer {
+	position:relative;
+		width:100%;
+		weight:100%;
+		height:auto;
+		background-color: black;
+		color:white;
+		font-size:20px;
+		line-height:80px;
+		text-align:center;
+		font-family: 'Cinzel', serif;
+
+
+	}
+
+	/*フッターの上部に空白ができるため*/
+	h6 {
+		margin:0;
+	}

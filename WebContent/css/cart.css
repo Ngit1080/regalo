@@ -1,0 +1,183 @@
+@CHARSET "UTF-8";@CHARSET "UTF-8";
+
+
+	/* ========TAG LAYOUT======== */
+
+		* {
+/* 			font-family:'Hiragino Kaku Gothic Pro W3','Hiragino Kaku Gothic ProN',Meiryo,sans-serif; */
+			text-decoration:none;
+		}
+
+		body {
+			margin:0;
+			padding:0;
+			line-height:1.6;
+			letter-spacing:1px;
+/* 			font-family:Verdana,Helvetica,sans-serif; */
+			font-size:12px;
+			color:#333;
+			background:#fff;
+
+		}
+
+
+/* 		header { */
+/* 			margin:0 auto; */
+/* 			padding:0; */
+/* 			height:100px; */
+/* 			background:black; */
+/* 			text-align:left; */
+/* 			color:#fff; */
+/* 			font-size:80px; */
+/* 			line-height: 60px; */
+/* 		} */
+#title1 {
+	width:100%;
+	height:150px;
+
+/* 	background:black; */
+
+	font-size:80px;
+	line-height:200px;
+/* 	border-bottom:solid 1px red; */
+
+ 	margin-bottom:40px;
+
+	color:white;
+	font-family:'Cinzell',serif;
+	text-align:center;
+	text-shadow: 1px 2px 3px white;
+	}
+
+
+
+		table {
+			text-align:left;
+			margin:0 auto;
+/* 			font-family:'Cinzell',serif; */
+		}
+
+		tr {
+			padding-left:10px;
+		}
+
+		td {
+			padding-left:10px;
+		}
+
+		footer {
+			height:200px;
+		}
+
+		h6 {
+			margin:0 auto;
+		}
+
+		img{
+			border-radius:10px;
+		}
+
+}
+
+
+	/* ========ID LAYOUT======== */
+
+/* 		.title{ */
+/* 	width:100%; */
+/* 	height:100px; */
+/* 	background:black; */
+/* 	font-size:80px; */
+/* 	line-height:100px; */
+/* 	margin-bottom:50px; */
+/* 	color:white; */
+/* 	font-family:'Cinzell',serif; */
+/* /* 	text-align:center; */ */
+
+/* } */
+		#main {
+			padding-top:150px;
+			/*padding-bottom:150px; */
+		}
+
+		.container {
+/* 		position:relative;
+		width:35%;
+		height:auto;
+/* 		background:black; */
+		margin-left : 30%;
+		margin-right: 30%;
+		border-radius:50px;
+		background-color:rgba(255,255,255,0.4);
+		border:solid 1px gray;
+/* 		padding-top: 50px; */
+		height:auto;
+		position:relative;
+/* 		width:35%; */
+		}
+
+		#form {
+			/* height:200px;
+			background:#fff;*/
+		}
+
+	/* ========CLASS LAYOUT======== */
+
+		.errorMessage {
+			color:#ff0000;
+			/* border:1px solid black; */
+		}
+
+		.check_hover {
+			color:#fff;
+		}
+
+		.check_hover:hover {
+			color:#ff0000;
+		}
+
+		.price_and_btns{
+			margin-top:25px;
+			margin-bottom:25px;
+			font-size:20px;
+			text-align:center;
+		}
+
+		.submit_btn_set{
+			margin-top:10px;
+
+		}
+		.contents-btn-set{
+			display: inline-block;
+			margin-right: 10px;
+			font-size:20px;
+		}
+
+		.money {
+/* 		font-family:'Cinzell',serif; */
+		font-weight: bold;
+		}
+
+	/* ========BUTTON LAYOUT======== */
+
+		.submit_btn_box {
+		text-align: center;
+		}
+
+
+/*  	#ribbon_area { */
+/*      position: absolute; */
+/*      top: 194px; */
+/*      right: 471px; */
+/*      width: 89px; */
+/*      height: 91px; */
+/*      overflow: hidden; */
+/*    }  */
+
+		.info {
+		text-align: center;
+		font-size: 15px;
+		padding-top:20px;
+		padding-bottom: 20px;
+		font-weight: bold;
+		}
+

@@ -1,0 +1,165 @@
+@CHARSET "UTF-8";
+
+
+/*ヘッダーとフッターの間に空間を作る*/
+/* html { */
+/* 		background-image: url("../images/haikei24.jpg"); */
+
+/*    	background-size: contain; */
+
+
+/*  	background-size: 100% 100%; */
+
+/* } */
+
+
+body {
+
+}
+
+/*bodyの下*/
+#main {
+	width:100%;
+	min-height:700px;
+
+	padding-bottom:150px;
+
+ 	background-image: url("../images/haikei24.jpg");
+
+  	background-size: contain;
+/*   background-size: cover;  */
+
+ 	background-size: 100% 100%;
+}
+
+#animate {
+	z-index: 99;
+  cursor: pointer;
+  position: fixed;
+  top: 40%;
+  right: -140px;
+  background: #0DCEA8;
+  width: 180px;
+  color: #fff;
+  font-size: 16px;
+}
+
+/*メニュー*/
+#menu {
+	/* position:fixed;
+
+	top:0;
+	right:0; */
+
+	/* width:5%;
+	height:100%;
+
+	padding:5px;
+
+	opacity:0;
+
+	color:grey; */
+
+
+}
+
+/* #menu:hover {
+	position:fixed;
+
+	top:0;
+	right:0;
+
+	width:15%;
+	height:100%;
+
+	padding:5px;
+
+	background:white;
+
+	color:grey;
+
+	opacity:1;
+}
+ */
+
+/*上部タイトル*/
+/* #title { */
+/* 	width:100%; */
+/* 	height:auto; */
+
+/* 	background:black; */
+
+/* 	font-size:80px; */
+/* 	line-height:200px; */
+
+/* 	margin-bottom:150px; */
+
+/* 	color:white; */
+
+/* 	text-align:center; */
+	/* font-family: 'Cinzel', serif; */
+/* 	font-family: 'Great Vibes', cursive; */
+/* } */
+
+/*mainの下*/
+#container {
+	width:85%;
+	height:auto;
+    position:relative;
+    top:100px;
+	background:black;
+
+	margin-left:7.5%;
+	margin-right:7.5%;
+	/* margin-bottom:10%; */
+
+}
+
+/*------------------ リボン-------------- */
+	.ribbon_area {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    width: 89px;
+    height: 91px;
+    overflow: hidden;
+  }
+
+.ribbon14 {
+    display: inline-block;
+    position: absolute;
+    padding: 7px 0;
+    left: -23px;
+    top: 22px;
+    width: 160px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 16px;
+    background: black;
+    color: #fff;
+    letter-spacing: 0.05em;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+    font-family:'Cinzell',serif;
+}
+
+.ribbon14:before,.ribbon14:after{
+    position: absolute;
+    content: "";
+    border-top: 4px solid #b2751b;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    bottom: -4px;
+
+}
+
+.ribbon14:before{
+    left: 14px;
+}
+
+.ribbon14:after{
+  	right: 18px;
+}

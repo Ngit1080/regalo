@@ -1,0 +1,156 @@
+@CHARSET "UTF-8";
+
+a {
+	color:white;
+}
+
+
+#container {
+	padding-bottom:50px;
+
+	border-radius:50px;
+	background-color:rgba(255,255,255,0.4);
+	border:solid 1px gray;
+}
+
+#wrapper {
+	position:relative;
+
+	width:21.25%;
+	height:auto;
+
+	margin-top:5%;
+	margin-bottom:5%;
+	margin-left:8.5%;
+
+	/* border:1px solid white; */
+
+	float:left;
+
+	color:white;
+}
+
+/*ボーダーの比率*/
+.ratio-1_1:before {
+	content: "";
+	display: block;
+	padding-top: 100%; /* ratio */
+}
+
+/*商品*/
+#products {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+/*画像を囲う*/
+#imageContainer {
+	display:block;
+	width:100%;
+	height:100%;
+}
+
+/*モノクロフィルタ*/
+#products img {
+	webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	border-radius: 5px;
+}
+
+#products:hover img {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+#products:hover{
+	transform: scale(1.02);
+	-webkit-transition:	all 0.6s ease;
+	transition:		all 0.6s ease;
+}
+
+/*商品詳細*/
+#products #productDetail {
+
+  transition: 0.5s;
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  transform: translateX(-10%);
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 14px;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+}
+#products:hover #productDetail {
+	opacity: 0.9;
+  transform: translateX(0);
+}
+/*画像*/
+#image {
+	position: absolute;
+
+	top:50%;
+	left:50%;
+
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+
+	max-width:100%;
+	max-height:100%;
+
+}
+
+.url {
+	position:absolute;
+	top:80;
+	left:50;
+	width:100%;
+
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+
+/*商品名かな*/
+.productNameKana {
+	font-size:12px;
+}
+
+/*価格*/
+#price {
+	color:white;
+}
+
+/* for modern brouser */
+		.clearfix:after {
+		  content: ".";
+		  display: block;
+		  clear: both;
+		  height: 0;
+		  visibility: hidden;
+		}
+		/* IE7,MacIE5 */
+		.clearfix {
+		  display: inline-block;
+		}
+		/* WinIE6 below, Exclude MacIE5 \*/
+		* html .clearfix {
+		  height: 1%;
+		}
+		.clearfix {
+		  display: block;
+		}
+/* for modern brouser */
