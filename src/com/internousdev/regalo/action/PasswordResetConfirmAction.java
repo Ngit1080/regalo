@@ -14,24 +14,20 @@ import com.opensymphony.xwork2.ActionSupport;
 public class PasswordResetConfirmAction extends ActionSupport implements SessionAware{
 
 	private String userId = "";      //ユーザーID
-	private String password = "";   //現在のパスワード
-	private String password1;   //新しいパスワード
-	private String password2;   //確認パスワード
-
-//	private String passCon;     //現在のパスワードを*で暗号化
-//	private String passCon1;    //新しいパスワードを*で暗号化
-//	private String passCon2;    //確認パスワードを*で暗号化
-	private String hidePassword;//新しいパスワードを*で暗号化
+	private String password = "";    //現在のパスワード
+	private String password1;        //新しいパスワード
+	private String password2;        //確認パスワード
+	private String hidePassword;     //新しいパスワードを*で暗号化
 
 	private Map<String,Object> session;
 
-	private String errorId = "";        //IDエラー
-	private String errorPassword = "";  //現在のパスワード
-	private String errorPass = "";      //新しいパスワードエラー
-	private String errorRePass = "";    //確認用パスワードエラー
-	private String errorMessagePassword = "";   //エラーメッセージパスワード
-	private String errorMessageId = "";   //エラーメッセージID
-//	private String errorPassword1 = ""; //新しいパスワードが以前と同じパスワードだったときのエラーメッセージ
+	private String errorId = "";              //IDエラー
+	private String errorPassword = "";        //現在のパスワードエラー
+	private String errorPass = "";            //新しいパスワードエラー
+	private String errorRePass = "";          //確認用パスワードエラー
+	private String errorMessagePassword = ""; //新しいパスワードと確認パスワードが一致しなかったときのエラー
+	private String errorMessageId = "";       //ID パスワードエラー
+
 
 	private static final String ERRORPAGE = "errorPage";
 
@@ -145,31 +141,7 @@ public class PasswordResetConfirmAction extends ActionSupport implements Session
 
 			hidePassword = sb.toString();
 		}
-
 		session.put("hidePassword",hidePassword);
-		session.put("loginDTO,",loginDTO);
-
-
-//		passCon = "";
-//		if(password.length() > 0) {
-//			for(int i = 0; i < password.length(); i++){
-//				passCon += "*";
-//			}
-//		}
-//
-//		passCon1 = "";
-//		if(password1.length() > 0) {
-//			for(int i = 0; i < password1.length(); i++) {
-//				passCon1 += "*";
-//			}
-//		}
-//
-//		passCon2 = "";
-//		if(password2.length() > 0) {
-//			for(int i = 0; i < password2.length(); i++) {
-//				passCon2 += "*";
-//			}
-//		}
 
 
 		//新しいパスワードと確認パスワードが一致しなかったらエラーメッセージを出す
@@ -232,14 +204,6 @@ public class PasswordResetConfirmAction extends ActionSupport implements Session
 		this.password2 = password2;
 	}
 
-//	public String getPassCon() {
-//		return passCon;
-//	}
-//
-//	public void setPassCon(String passCon) {
-//		this.passCon = passCon;
-//	}
-
 	public String getErrorPassword() {
 		return errorPassword;
 	}
@@ -255,22 +219,6 @@ public class PasswordResetConfirmAction extends ActionSupport implements Session
 	public void setErrorPasswordList(List<String> errorPasswordList) {
 		ErrorPasswordList = errorPasswordList;
 	}
-
-//	public String getPassCon1() {
-//		return passCon1;
-//	}
-//
-//	public void setPassCon1(String passCon1) {
-//		this.passCon1 = passCon1;
-//	}
-//
-//	public String getPassCon2() {
-//		return passCon2;
-//	}
-//
-//	public void setPassCon2(String passCon2) {
-//		this.passCon2 = passCon2;
-//	}
 
 	public String getErrorId() {
 		return errorId;

@@ -7,12 +7,15 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" href="./css/style2.css">
 <link rel="stylesheet" href="./css/form-style.css">
+<link rel="stylesheet" href="./css/passwordReset.css">
 <link href="https://fonts.googleapis.com/css?family=Arizonia|Cinzel|Cormorant+Garamond" rel="stylesheet">
 <meta http-equiv="Content-Script-Type" content="text/javascript" />
 <meta http-equiv="imagetoolbar" content="no" />
 <meta name="description" content="">
 <meta name="keywords" content="" />
+
 <title>パスワード再設定画面</title>
+
 <script>
 function goLoginAction(){
 	document.getElementById("form").action="LoginAction";
@@ -37,118 +40,16 @@ function goPasswordResetConfirmAction(){
 	}
 </script>
 
-
-<style type="text/css">
-
-/*------------ コンテナ -------------*/
-#container{
-	position:relative;
-/* 	width:35%; */
-/* 	height:800px; */
-	width:auto;
-	height:auto;
-/* 	background:black; */
-	margin-left : 30%;
-	margin-right: 30%;
-	border-radius:50px;
-	background-color:rgba(255,255,255,0.4);
-	border:solid 1px gray;
-/* 	padding-top: 50px; */
-	}
-
-/*------------ テーブル -------------*/
-table {
-/*  	position: absolute; */
-/*  	top:60%; */
-/*  	left:50%; */
- 	text-align:center;
- 	color:black;
- 	clear:both;
-/* 	-webkit-transform: translate(-50%,-50%); */
-/*  	-moz-transform: translate(-50%,-50%); */
-/*   	-ms-transform: translate(-50%,-50%); */
-/*   	-o-transform: translate(-50%,-50%); */
-/*   	transform: translate(-50%,-50%); */
- 	}
-
-/* #title-password { */
-/* 	width:100%; */
-/* 	height:150px; */
-
-/* 	background:black; */
-
-/* 	font-size:80px; */
-/* 	line-height:200px; */
-/* 	border-bottom:solid 1px red; */
-
-/* 	margin-bottom:150px; */
-
-/* 	color:white; */
-/* 	font-family:'Cinzell',serif; */
-/* 	text-align:center; */
-/* 	text-shadow: 1px 2px 3px white; */
-/* 	} */
-
-/* #title-reset { */
-/* 	width:100%; */
-/* 	height:150px; */
-
-/* 	background:black; */
-
-/* 	font-size:80px; */
-/* 	line-height:200px; */
-/* 	border-bottom:solid 1px red; */
-
-/* 	margin-bottom:150px; */
-
-/* 	color:white; */
-/* 	font-family:'Cinzell',serif; */
-/* 	text-align:center; */
-/* 	text-shadow: 1px 2px 3px white; */
-/* 	} */
-
-.passwordtext {
-	position: absolute;
-	top:55%;
-	left:50%;
-	text-align:center;
-	color:black;
-	clear:both;
-
- 	-webkit-transform: translate(-50%,-50%);
- 	-moz-transform: translate(-50%,-50%);
- 	-ms-transform: translate(-50%,-50%);
- 	-o-transform: translate(-50%,-50%);
- 	transform: translate(-50%,-50%);
-	}
-
-/*------------ ボタンの編集 -------------*/
-.button1 {
-  	text-align: center;
-/*    	padding-top: 400px; */
-/*   	margin-left:10px; */
-	padding-top: 30px;
-	padding-bottom: 30px;
-  /* 	margin-top: 485px; */
-/*   	margin-top: 480px; */
-/*   	clear:both; */
-	/*margin-right:10px;*/
- 	}
-</style>
-
 </head>
 <body>
 <!-- ヘッダー -->
-<!-- <div id="menu"> -->
-	<jsp:include page="includeHeader.jsp"/>
-<!-- </div> -->
+<jsp:include page="includeHeader.jsp"/>
 
 <div class="main">
 	<div id="title"></div>
+	<div id="container">
 
-<div id="container">
-
-			<s:form action="PasswordResetConfirmAction" theme="simple" id="form" method="post">
+	<s:form action="PasswordResetConfirmAction" theme="simple" id="form" method="post">
 
 	<div id="title1">PASSWORD</div>
 	<div id="title2">RESET</div>
@@ -157,8 +58,8 @@ table {
     	<span class="ribbon14">Regalo</span>
   </div>
 </div>
-<!-- 	<div  class="password_text"> -->
-		<table>
+
+		<table class="form_password">
 
 		<!-- ユーザーID -->
 		<tr>
@@ -281,8 +182,8 @@ table {
 </div>
 </div>
 
-	<!-- フッター -->
-		<jsp:include page="includeFooter.jsp"/>
+<!-- フッター -->
+<jsp:include page="includeFooter.jsp"/>
 
 </body>
 </html>

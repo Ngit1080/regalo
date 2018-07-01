@@ -34,11 +34,6 @@ public class PasswordResetCompleteDAO {
 				}else{
 					result = null;
 				}
-
-
-//			}else if(password.equals(rs.getString("password"))) {
-//				result = "以前と同じパスワードは使用できません";
-//
 			}
  		} catch(SQLException e) {
  			e.printStackTrace();

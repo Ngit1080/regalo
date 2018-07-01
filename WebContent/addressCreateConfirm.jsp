@@ -7,6 +7,7 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" href="./css/style2.css">
 <link rel="stylesheet" href="./css/confirm-style.css">
+<link rel="stylesheet" href="./css/addressCreate.css">
 <link href="https://fonts.googleapis.com/css?family=Arizonia|Cinzel|Cormorant+Garamond" rel="stylesheet">
 <meta http-equiv="Content-Script-Type" content="text/javascript" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -26,80 +27,16 @@ function goAddressCreateCompleteAction(){
 	document.getElementById("form").action="AddressCreateCompleteAction";
 }
 </script>
-<style type="text/css">
 
-/*------------ コンテナ -------------*/
-.container {
-	position:relative;
-/* 	width:40%; */
-/* 	height:800px; */
-	width:auto;
-	height:auto;
-/* 	background:black; */
-	margin-left:30%;
-	margin-right:30%;
-	border-radius:50px;
-	background-color:rgba(255,255,255,0.4);
-	border:solid 1px gray;
-	}
-
-/*------------ テーブル -------------*/
-table {
-/*  	position: absolute; */
-/* 	top:55%; */
-/* 	left:50%; */
-	margin:0 auto;
-	text-align:left;
-	color:black;
-/*  	clear:both; */
-
-/*   	-webkit-transform: translate(-50%,-50%); */
-/*   	-moz-transform: translate(-50%,-50%); */
-/*   	-ms-transform: translate(-50%,-50%); */
-/*   	-o-transform: translate(-50%,-50%); */
-/*   	transform: translate(-50%,-50%); */
- 	}
-
-/*------------ 確認メッセージ -------------*/
-.reset {
-/* 	padding-top: 55px; */
-	margin:0 auto;
-	padding:35px;
-	font-size:25px;
-	text-align: center;
-	}
-
-/*------------ 入力情報 -------------*/
-.register {
-	font-weight: bold;
-	}
-
-/*------------ ボタン -------------*/
-.button {
-/*  	position:relative; */
-/*  	width:200px; */
- 	text-align:center;
- 	padding-top: 30px;
- 	padding-bottom: 30px;
-/*  	margin:0 auto;; */
-/* 	margin-top:395px; */
-	}
-
-</style>
 </head>
 <body>
-	<!-- ヘッダー -->
-<!-- 	<div id="menu"> -->
-		<jsp:include page="includeHeader.jsp"/>
-<!-- 	</div> -->
+<!-- ヘッダー -->
+<jsp:include page="includeHeader.jsp"/>
 
-	<div id="main">
-
-<div id="title"></div>
-
-			<div class="container">
-
-	<s:form action="GoAddressCreateAction" id="form">
+<div id="main">
+	<div id="title"></div>
+	<div id="container">
+		<s:form action="GoAddressCreateAction" id="form">
 
 	<div id="title-address">ADDRESS</div>
 		<div class="ribbon_box3">
@@ -214,8 +151,9 @@ table {
 		</s:form>
 	</div>
 </div>
-	<!-- フッター -->
-	<jsp:include page="includeFooter.jsp"/>
+
+<!-- フッター -->
+<jsp:include page="includeFooter.jsp"/>
 
 </body>
 </html>

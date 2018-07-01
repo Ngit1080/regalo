@@ -1,0 +1,61 @@
+@CHARSET "UTF-8";
+
+/*------------ タイトル -------------*/
+#containar-title {
+	width:100%;
+	height:150px;
+	font-size:80px;
+	line-height:200px;
+	color:black;
+	font-family:'Cinzell',serif;
+	text-align:center;
+	text-shadow: 1px 2px 3px white;
+	}
+
+/*------------ テーブル -------------*/
+table .form_text {
+	margin:0 auto;
+	text-align:left;
+	color:black;
+ 	}
+
+
+/*------------ 性別項目の編集 -------------*/
+.form_title {
+ 	margin-top:25px;
+ 	margin-right:25px;
+ 	margin-bottom:25px;
+	float:left;
+ 	font-size: 18px;
+ 	font-weight: bold;
+	}
+
+/*------------ ラジオボタンの編集 -------------*/
+.radio_button {
+ 	margin: 25px;
+ 	font-weight: bold;
+	clear:both;
+	}
+
+/*------------ 確認メッセージ -------------*/
+.reset {
+	margin:0 auto;
+	padding:35px;
+	font-size:25px;
+	text-align: center;
+	}
+
+/*------------ 入力情報 -------------*/
+.register {
+	font-weight: bold;
+	}
+
+
+/*------------ ボタンの編集 -------------*/
+.button {
+ 	text-align:center;
+ 	padding-top: 30px;
+ 	padding-bottom: 30px;
+	}
+
+

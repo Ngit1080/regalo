@@ -44,6 +44,7 @@ public class PasswordResetCompleteAction extends ActionSupport implements Sessio
 
 	}
 
+
 	public String getUserId() {
 		return userId;
 	}

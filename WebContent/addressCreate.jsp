@@ -7,7 +7,7 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" href="./css/style2.css">
 <link rel="stylesheet" href="./css/form-style.css">
-<meta http-equiv="Content-Style-Type" content="text/css" />
+<link rel="stylesheet" href="./css/addressCreate.css">
 <link href="https://fonts.googleapis.com/css?family=Arizonia|Cinzel|Cormorant+Garamond" rel="stylesheet">
 <meta http-equiv="Content-Script-Type" content="text/javascript" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -15,9 +15,9 @@
 <meta http-equiv="imagetoolbar" content="no" />
 <meta name="description" content="">
 <meta name="keywords" content="" />
+
 <title>宛先情報入力画面</title>
 </head>
-
 
 <script>
 function goBuyProductConfirmAction(){
@@ -29,90 +29,18 @@ function goAddressCreateConfirmAction(){
 }
 </script>
 
-<style type="text/css">
-
-/*------------ コンテナ -------------*/
-.container {
-	position:relative;
-	width:auto;
- 	height:auto;
-/*     height:auto; */
-/* 	background:black; */
-	margin-left : 30%;
-	margin-right: 30%;
-	border-radius:50px;
-	background-color:rgba(255,255,255,0.4);
-	border:solid 1px gray;
-/* 	padding-top: 50px; */
-	}
-
-/*------------ タイトル -------------*/
-#title-address {
-	width:100%;
-	height:150px;
-
-/* 	background:black; */
-
-	font-size:80px;
-	line-height:200px;
-/* 	border-bottom:solid 1px red; */
-
-/* 	margin-bottom:150px; */
-
-	color:black;
-	font-family:'Cinzell',serif;
-	text-align:center;
-	text-shadow: 1px 2px 3px white;
-	}
-
-/*------------ 性別 -------------*/
-.form_title {
- 	margin-top:25px;
- 	margin-right:25px;
- 	margin-bottom:25px;
-	float:left;
- 	font-size: 18px;
- 	font-weight: bold;
-/*  	text-shadow: 1px 2px 3px #808080; */
-	}
-
-/*------------ ラジオボタンの編集 -------------*/
-.radio_button {
-/* 	text-align: center; */
- 	margin: 25px;
- 	font-weight: bold;
-	clear:both;
-	}
-
-/*------------ ボタンの編集 -------------*/
-.button1 {
-  	text-align: center;
-/*    	padding-top: 720px; */
-	padding-top:30px;
-	padding-bottom: 30px;
-/*   	margin-left:10px; */
-  /* 	margin-top: 485px; */
-/*   	margin-top: 480px; */
-/*   	clear:both; */
-	/*margin-right:10px;*/
- 	}
-
-</style>
-
 <body>
 <!-- ヘッダー -->
-<!-- <div id="menu"> -->
-	<jsp:include page="includeHeader.jsp"/>
-<!-- </div> -->
+<jsp:include page="includeHeader.jsp"/>
 
 <div class="main">
-<!-- <div class="main2"> -->
+
 	<div id="title"></div>
-	<div class="container">
-<!-- 		<div id="wrapper"> -->
+	<div id="container">
+
 	<s:form action="AddressCreateConfirmAction" theme="simple" id="form">
 
- 	<div id="title-address">ADDRESS</div>
+ 	<div id="containar-title">ADDRESS</div>
 		<div class="ribbon_box3">
   		<div class="ribbon_area">
     	<span class="ribbon14">Regalo</span>
@@ -287,19 +215,19 @@ function goAddressCreateConfirmAction(){
 
 
 	<!-- 送信ボタン -->
-		<div class="button1">
+		<div class="button">
 			<span class="button3"><s:submit value="確認" class="button4 fadelink"  onclick="goAddressCreateConfirmAction();"/></span>
 
 			<span class="button3"><s:submit value="戻る" class="button4 fadelink" onclick="goBuyProductConfirmAction();"/></span>
 		</div>
 
 	</s:form>
-<!-- 	</div> -->
+
 	</div>
 </div>
-<!-- </div> -->
-	<!-- フッター -->
-	<jsp:include page="includeFooter.jsp"/>
+
+<!-- フッター -->
+<jsp:include page="includeFooter.jsp"/>
 
 </body>
 </html>

@@ -17,8 +17,6 @@ public class AddressCreateConfirmAction extends ActionSupport implements Session
 	private String firstNameKana;   //名仮名
 	private List<String> sexList = new ArrayList<String>();
 	private String sex;             //性別
-
-
 	private static final String MALE = "男性";
 	private static final String FEMALE ="女性";
 	private String defaultSexValue = MALE;

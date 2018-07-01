@@ -16,8 +16,6 @@ public class GoAddressCreateAction extends ActionSupport implements SessionAware
 	private String firstNameKana;   //名仮名
 	private String sex;             //性別
 	private String mail;
-//	private String secretQuestion;
-//	private String secretAnswer;
 	private String email;           //メールアドレス
 	private String telNumber;       //電話番号
 	private String userAddress;     //住所
@@ -108,22 +106,6 @@ public class GoAddressCreateAction extends ActionSupport implements SessionAware
 	public void setMail(String mail) {
 		this.mail = mail;
 	}
-
-//	public String getSecretQuestion() {
-//		return secretQuestion;
-//	}
-//
-//	public void setSecretQuestion(String secretQuestion) {
-//		this.secretQuestion = secretQuestion;
-//	}
-//
-//	public String getSecretAnswer() {
-//		return secretAnswer;
-//	}
-//
-//	public void setSecretAnswer(String secretAnswer) {
-//		this.secretAnswer = secretAnswer;
-//	}
 
 	public String getEmail() {
 		return email;
