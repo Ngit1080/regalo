@@ -70,7 +70,7 @@ public class PasswordResetConfirmAction extends ActionSupport implements Session
 		ErrorPasswordList1 = inputChecker.check("新しいパスワード",password1,1,16,true,false,false,false,true,false,false);
 		ErrorReconfirmPassList = inputChecker.check("確認パスワード",password2,1,16,true,false,false,false,true,false,false);
 
-		//ユーザーIDと新しいパスワードが同じだったらDBの現在のパスワードと同じになってしまうのでエラー文を出す
+
 		String isNewPasswordTrue = passwordResetDAO.isNewPasswordTrue(userId, password1);
 		if(isNewPasswordTrue != null){
 			ErrorPasswordList2.add(isNewPasswordTrue);
